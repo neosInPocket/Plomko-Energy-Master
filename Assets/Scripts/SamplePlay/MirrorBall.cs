@@ -1,18 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MirrorBall : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void Initialize(float yPosition)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        transform.position = new Vector2(0, yPosition);
     }
 }

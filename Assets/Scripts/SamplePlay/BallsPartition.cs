@@ -1,18 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BallsPartition : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	[SerializeField] private Transform top;
+	[SerializeField] private Transform bottom;
+	[SerializeField] private SpriteRenderer spriteRenderer;
+	[SerializeField] private float height;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	public void Initialize(Vector2 position)
+	{
+		var screenSize = CageSpawner.ScreenSize();
+		var scale = transform.localScale;
+		scale.x = screenSize.x;
+
+		transform.position = position;
+
+		spriteRenderer.size = new Vector2(2 * screenSize.x, height);
+	}
 }

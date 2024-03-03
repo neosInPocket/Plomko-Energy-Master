@@ -1,18 +1,44 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ControlBall : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	[SerializeField] private Rigidbody2D rb;
+	[SerializeField] private MirrorBall mirrorBall;
+	private Vector2 initialPosition;
+	private float yOffset;
+	private Vector2 currentPosition;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	public void Initialize(float yPosition, float mirrorY)
+	{
+		transform.position = new Vector2(0, yPosition);
+		initialPosition = transform.position;
+		yOffset = mirrorY - transform.position.y;
+
+		rb.velocity = Vector2.one * 2;
+	}
+
+	private void Update()
+	{
+		currentPosition = transform.position;
+		currentPosition.y += yOffset;
+
+		mirrorBall.transform.position = currentPosition;
+	}
+
+	public void AddVelocity(Vector2 force)
+	{
+		rb.AddForce(force, ForceMode2D.Impulse);
+	}
+
+	private void OnTriggerEnter2D(Collider2D collider)
+	{
+		if (collider.transform.position.x == 0)
+		{
+			rb.velocity = Vector2.Reflect(rb.velocity, Vector2.up);
+		}
+		else
+		{
+			rb.velocity = Vector2.Reflect(rb.velocity, Vector2.right);
+		}
+	}
 }
