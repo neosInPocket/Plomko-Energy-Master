@@ -30,6 +30,7 @@ public class CageSpawner : MonoBehaviour
 		var rightPosition = new Vector2(screenSize.x + elementWidth / 2, 0);
 		var topPosition = new Vector2(0, 2 * screenSize.y * topCageYSpawnPosition - screenSize.y + elementWidth / 2);
 		var bottomPosition = new Vector2(0, -screenSize.y - elementWidth / 2);
+		yCageBorders = new Vector2(screenSize.y * topCageYSpawnPosition - screenSize.y, 2 * screenSize.y * topCageYSpawnPosition - screenSize.y);
 
 		SetPosition(0, leftPosition, leftSize);
 		SetPosition(1, rightPosition, leftSize);

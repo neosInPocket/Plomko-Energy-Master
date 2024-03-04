@@ -603,7 +603,7 @@ MonoBehaviour:
   buy: {fileID: 1946085292}
   upgradeIndex: 1
   priceText: {fileID: 472728174}
-  price: 50
+  price: 15
   buyButtonText: {fileID: 2143469445}
 --- !u!114 &89513038
 MonoBehaviour:
@@ -1295,7 +1295,7 @@ MonoBehaviour:
   buy: {fileID: 1887734875}
   upgradeIndex: 0
   priceText: {fileID: 411014726}
-  price: 25
+  price: 10
   buyButtonText: {fileID: 66084245}
 --- !u!1 &338527694
 GameObject:
@@ -3003,7 +3003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a56ce11e11a5a7f459dcdc91f67d4489, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clearPresets: 1
+  clearPresets: 0
   fileName: SaveScriptData
 --- !u!4 &949317003
 Transform:
@@ -3979,7 +3979,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: upgrade name
+  m_text: spike size
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3e87b182ebf4e014aabc0070dec8cce8, type: 2}
   m_sharedMaterial: {fileID: -285676200449485570, guid: 3e87b182ebf4e014aabc0070dec8cce8, type: 2}
@@ -4443,7 +4443,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: upgrade name
+  m_text: PUSH WAVE STRENGTH
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3e87b182ebf4e014aabc0070dec8cce8, type: 2}
   m_sharedMaterial: {fileID: -285676200449485570, guid: 3e87b182ebf4e014aabc0070dec8cce8, type: 2}
@@ -5087,7 +5087,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1650398765
 RectTransform:
   m_ObjectHideFlags: 0

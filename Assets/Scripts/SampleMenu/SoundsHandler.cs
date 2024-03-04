@@ -14,20 +14,16 @@ public class SoundsHandler : MonoBehaviour
 		index++;
 
 		SoundsHandler[] foundOne = FindObjectsByType<SoundsHandler>(sortMode: FindObjectsSortMode.None);
+		var activeSoundHandler = foundOne.FirstOrDefault(x => x.gameObject.scene.name == "DontDestroyOnLoad");
+		var nonMine = foundOne.FirstOrDefault(x => x.gameObject.scene.name != "DontDestroyOnLoad");
 
-		for (int i = 0; i < foundOne.Length; i++)
+		if (activeSoundHandler != null)
 		{
-			if (foundOne[i].gameObject.scene.name != "DontDestroyOnLoad")
-			{
-				if (foundOne[i] != this)
-				{
-					Destroy(foundOne[i].gameObject);
-				}
-				else
-				{
-					DontDestroyOnLoad(this.gameObject);
-				}
-			}
+			Destroy(nonMine.gameObject);
+		}
+		else
+		{
+			DontDestroyOnLoad(nonMine.gameObject);
 		}
 	}
 

@@ -7,14 +7,14 @@ public class ControlBall : MonoBehaviour
 	private Vector2 initialPosition;
 	private float yOffset;
 	private Vector2 currentPosition;
+	[SerializeField] private TrailRenderer trailRenderer;
 
 	public void Initialize(float yPosition, float mirrorY)
 	{
 		transform.position = new Vector2(0, yPosition);
 		initialPosition = transform.position;
 		yOffset = mirrorY - transform.position.y;
-
-		rb.velocity = Vector2.one * 2;
+		trailRenderer.Clear();
 	}
 
 	private void Update()
@@ -40,5 +40,10 @@ public class ControlBall : MonoBehaviour
 		{
 			rb.velocity = Vector2.Reflect(rb.velocity, Vector2.right);
 		}
+	}
+
+	public void StopBall()
+	{
+		rb.constraints = RigidbodyConstraints2D.FreezeAll;
 	}
 }

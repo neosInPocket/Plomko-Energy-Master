@@ -12,7 +12,7 @@ public class SaveScriptData
 	public SaveScriptData()
 	{
 		levelPlayer = 1;
-		emeralds = 1000;
+		emeralds = 10;
 		upgradesMassive = new int[] { 0, 0 };
 		soundsEnabled = new bool[] { true, true };
 		guideEnabled = true;
