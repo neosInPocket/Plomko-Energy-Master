@@ -2696,7 +2696,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: WELCOME TO WINTER PLINKO!
+  m_text: WELCOME TO Plomko Energy Master!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3e87b182ebf4e014aabc0070dec8cce8, type: 2}
   m_sharedMaterial: {fileID: -285676200449485570, guid: 3e87b182ebf4e014aabc0070dec8cce8, type: 2}
@@ -2729,7 +2729,7 @@ MonoBehaviour:
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 16
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535

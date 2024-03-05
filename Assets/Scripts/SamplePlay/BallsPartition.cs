@@ -11,7 +11,11 @@ public class BallsPartition : MonoBehaviour
 	{
 		var screenSize = CageSpawner.ScreenSize();
 		var scale = transform.localScale;
-		scale.x = screenSize.x;
+		scale.x = 2 * screenSize.x;
+		top.localScale = scale;
+		scale.z *= -1;
+		bottom.localScale = scale;
+
 
 		transform.position = position;
 

@@ -11,5 +11,53 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleGame.unity
     guid: 0069af36ce7ac0047a6e6ca939fae9b1
+  - enabled: 1
+    path: Assets/Scenes/SamplePrologue.unity
+    guid: 470971003aa69e54a82593eba565c057
+  - enabled: 1
+    path: Assets/Scenes/SamplePrologue 1.unity
+    guid: 1e309e10bd661d5408329276623d6871
+  - enabled: 1
+    path: Assets/Scenes/SamplePrologue 2.unity
+    guid: 3cefc4391c76af64e901cb4255acb2f1
+  - enabled: 1
+    path: Assets/Scenes/SamplePrologue 3.unity
+    guid: 5f4f408f0a5d95a4ea897f7b8983599b
+  - enabled: 1
+    path: Assets/Scenes/SamplePrologue 4.unity
+    guid: beaa57a1070632a45986ea69ac2b9295
+  - enabled: 1
+    path: Assets/Scenes/SamplePrologue 5.unity
+    guid: 3c838612e73c9104fabc00f72c16d287
+  - enabled: 1
+    path: Assets/Scenes/SamplePrologue 6.unity
+    guid: c0ccd5e1e6b5a674e813e0b790386f3a
+  - enabled: 1
+    path: Assets/Scenes/SamplePrologue 7.unity
+    guid: 0fdf5620bc7ffde449b725a4695eb2b2
+  - enabled: 1
+    path: Assets/Scenes/SamplePrologue 8.unity
+    guid: 3ef8214454d07b8448ef837236e9da4c
+  - enabled: 1
+    path: Assets/Scenes/SamplePrologue 9.unity
+    guid: 69cb86740abefd9458b963ae5dc5e827
+  - enabled: 1
+    path: Assets/Scenes/SamplePrologue 10.unity
+    guid: 7c0c74edb49d4a24e97208b0c84eecd8
+  - enabled: 1
+    path: Assets/Scenes/SamplePrologue 11.unity
+    guid: 54bac62df0228b149a8813ee802f4248
+  - enabled: 1
+    path: Assets/Scenes/SamplePrologue 12.unity
+    guid: 8c70b60b0a0df9e48b9cc911d714d800
+  - enabled: 1
+    path: Assets/Scenes/SamplePrologue 13.unity
+    guid: 7d762ab66e4104a41bc76fd9b48338a1
+  - enabled: 1
+    path: Assets/Scenes/SamplePrologue 14.unity
+    guid: daa39d8449531f4448866e07606c65d6
+  - enabled: 1
+    path: Assets/Scenes/SamplePrologue 15.unity
+    guid: 2c3b4180fed9b7b41b038921415a5833
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 0971405fc50a9724092acf2f7ed13313, type: 2}
