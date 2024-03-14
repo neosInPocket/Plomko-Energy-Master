@@ -58,7 +58,7 @@ public class GlobalFrame : MonoBehaviour
 		}
 	}
 
-	public void Upgrade()
+	public void GetUpgrade()
 	{
 		SaveScript.data.upgradesMassive[upgradeIndex]++;
 		SaveScript.data.emeralds -= price;

@@ -8,6 +8,13 @@ public class ControlBall : MonoBehaviour
 	private float yOffset;
 	private Vector2 currentPosition;
 	[SerializeField] private TrailRenderer trailRenderer;
+	[SerializeField] private SpriteRenderer spriteRenderer;
+	[SerializeField] private Sprite[] skin;
+
+	private void Start()
+	{
+		spriteRenderer.sprite = skin[SaveScript.data.currentSkinIndex];
+	}
 
 	public void Initialize(float yPosition, float mirrorY)
 	{

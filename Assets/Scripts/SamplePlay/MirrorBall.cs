@@ -10,6 +10,12 @@ public class MirrorBall : MonoBehaviour
 	public Action OnTriggerEnter { get; set; }
 	public Action CoinCollected { get; set; }
 	[SerializeField] private TrailRenderer trailRenderer;
+	[SerializeField] private Sprite[] skin;
+
+	private void Start()
+	{
+		spriteRenderer.sprite = skin[SaveScript.data.currentSkinIndex];
+	}
 
 	public void Initialize(float yPosition)
 	{
